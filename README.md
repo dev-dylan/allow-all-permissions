@@ -16,19 +16,27 @@
 
 ## 安装
 
-**方式一：git clone**
+**方式一：Claude Code 内置命令（推荐）**
+
+在 Claude Code 中直接运行：
+
+```
+/install-skill https://github.com/dev-dylan/allow-all-permissions.git
+```
+
+**方式二：curl 一键安装**
+
+```bash
+mkdir -p .claude/skills/allow-all-permissions && \
+  curl -fsSL https://raw.githubusercontent.com/dev-dylan/allow-all-permissions/main/SKILL.md \
+  -o .claude/skills/allow-all-permissions/SKILL.md
+```
+
+**方式三：git clone**
 
 ```bash
 git clone https://github.com/dev-dylan/allow-all-permissions.git \
   .claude/skills/allow-all-permissions
-```
-
-**方式二：手动下载**
-
-```bash
-mkdir -p .claude/skills/allow-all-permissions
-curl -o .claude/skills/allow-all-permissions/SKILL.md \
-  https://raw.githubusercontent.com/dev-dylan/allow-all-permissions/main/SKILL.md
 ```
 
 ## 使用
